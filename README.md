@@ -36,7 +36,7 @@ Use of this data is **strictly limited** to:
 
 This dataset is the result of systematic collection and analysis of publicly available social media account metadata from **X (Twitter)** and **Instagram**. It documents accounts exhibiting observable patterns consistent with amplification activities across multiple political influence ecosystems operating in the Persian-language information space.
 
-The dataset currently includes approximately **11,600 accounts** across four datasets, identified through graph-based analysis of public engagement data alongside open-source account listings.
+The dataset currently includes approximately **13,500 accounts** across five datasets, identified through graph-based analysis of public engagement data alongside open-source account listings.
 
 > **Note:** The term "network" is used in a technical, analytical sense referring to graph relationships and interaction patterns. It does not imply organizational membership, formal coordination, or command-and-control structures. See the [Legal Disclaimer](#-legal-ethical-and-methodological-disclaimer) for full details.
 
@@ -49,6 +49,7 @@ The dataset currently includes approximately **11,600 accounts** across four dat
 | `IR-X-Network.json`         | X/Twitter | ~4,200   | Accounts exhibiting engagement patterns with Islamic Republic state-affiliated media    |
 | `IR-Instagram-Network.json` | Instagram | ~3,100   | Accounts exhibiting engagement patterns with Islamic Republic state-affiliated content  |
 | `MEK.json`                  | X/Twitter | ~1,800   | Accounts exhibiting engagement patterns with Mojahedin-e Khalq (MEK)-related content    |
+| `Ghalibaf.json`             | X/Twitter | ~1,900   | Accounts exhibiting engagement patterns amplifying content related to Mohammad Bagher Ghalibaf |
 | `White-Internet.json`       | X/Twitter | ~2,400   | Accounts listed in the White Internet database with publicly cataloged account metadata |
 
 ### Network Descriptions
@@ -61,6 +62,8 @@ The dataset currently includes approximately **11,600 accounts** across four dat
 
 Both IR and MEK network clusters represent opposing political positions but exhibit similar observable engagement patterns. The term "network" is used in a technical, graph-analytical sense and does not imply organizational structure, command relationships, or coordinated intent.
 
+**Ghalibaf** — X (Twitter) accounts exhibiting observable engagement patterns that amplify content related to **Mohammad Bagher Ghalibaf**, a prominent Iranian political figure currently serving as Speaker of the Islamic Consultative Assembly (Majles) and a former senior IRGC commander and Mayor of Tehran. This dataset documents accounts whose public interaction signals (retweeting, replying to, or otherwise amplifying Ghalibaf-aligned content and outlets) cluster together under graph-based analysis. As with the other clusters, inclusion reflects observable behavioral patterns only and does not imply organizational membership, coordination, paid promotion, personal endorsement, or any formal relationship with Mr. Ghalibaf, his office, or any political faction.
+
 **White Internet** — Accounts listed in the open-source White Internet database, which aggregates publicly visible account metadata and inferred attributes. Inclusion indicates presence in the source listing only and should not be treated as evidence of affiliation, intent, or activity.
 Source: https://github.com/tasokait/white_internet_database (white_internet.xlsx). The upstream notes indicate the list is not actively maintained.
 
@@ -70,7 +73,7 @@ Source: https://github.com/tasokait/white_internet_database (white_internet.xlsx
 
 ### X (Twitter) Schema
 
-Each entry in `IR-X-Network.json` and `MEK.json` contains the following fields:
+Each entry in `IR-X-Network.json`, `MEK.json`, and `Ghalibaf.json` contains the following fields:
 
 ```json
 {
